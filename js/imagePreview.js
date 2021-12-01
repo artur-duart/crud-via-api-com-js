@@ -14,4 +14,6 @@ const imagePreview = (idFile, idImagem) => {
     fileReader.onloadend = () => (preview.src = fileReader.result);
 };
 
-export {imagePreview};
+export {
+    imagePreview
+};

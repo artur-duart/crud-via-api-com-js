@@ -12,20 +12,20 @@ const postProduto = (produto) => {
         method: 'POST',
         body: JSON.stringify(produto),
         headers: {
-            'content-type': 'application/json'
+            'content-type': 'application/json',
         },
     };
-    fetch(url, options)
+    fetch(url, options);
 };
 
 const deleteProduto = (id) => {
     const options = {
         method: 'DELETE',
         headers: {
-            'content-type': 'application/json'
+            'content-type': 'application/json',
         },
     };
-    fetch(`${url}/${id}`, options)
+    fetch(`${url}/${id}`, options);
 };
 
 export {
